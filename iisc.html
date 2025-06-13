@@ -32,23 +32,38 @@
             display: block;
             text-align: center;
         }
-        @media only screen and (max-width: 600px) {
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            font-size: 16px;
+            margin-top: 8px;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
             body {
-                font-size: 10px;
-                padding: 10px;
+                padding: 20px;
+                font-size: 16px;
             }
-
-            p {
-                font-size: 10px;
+            h1 {
+                font-size: 22px;
             }
-
-            h1, h2, h3 {
-                font-size: 13px;
+            .back-link {
+                font-size: 14px;
             }
-
-            img {
-                width: 100%;
-                height: auto;
+            figure img {
+                width: 90%;
+                margin: 10px auto;
+                display: block;
             }
         }
     </style>
@@ -66,7 +81,8 @@
     border-radius: 6px;
     color: #333;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-">← Back to Home</a>
+">&larr; Back to Home</a>
+
     <h1>IISc CSA M.Tech research interview experience</h1>
 
     <p> 
@@ -184,13 +200,14 @@ to implement. I have a wall board in my study room, which I used frequently befo
 I never felt anything unusual while doing problems on the board.
 </p>
 <figure style="text-align: center;">
-    <img src="legend.jpg" alt="IISc Main building" style="display: inline-block; margin: 20px auto; width: 400px;margin: 13px">
-    <img src="road.jpg" alt="Gulmohar marg" style="display: inline-block; margin: 20px auto; width: 400px;margin: 13px">
-    <figcaption style="font-size: 16px; margin-top: 8px; color: #555;">
-        Two pictures I captured during the visit
-    </figcaption>
-</figure>
+        <img src="legend.jpg" alt="IISc Main building" style="width: 45%; margin: 13px">
+        <img src="road.jpg" alt="Gulmohar marg" style="width: 45%; margin: 13px">
+        <figcaption>
+            Two pictures I captured during the visit
+        </figcaption>
+    </figure>
+
     <br>
-<a class="back-link" href="index.html">← Back to Home</a>
+    <a class="back-link" href="index.html">&larr; Back to Home</a>
 </body>
 </html>
