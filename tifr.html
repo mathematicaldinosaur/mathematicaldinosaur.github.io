@@ -53,19 +53,25 @@
         @media (max-width: 768px) {
             body {
                 padding: 16px;
-                font-size: 12px;
+                font-size: 13px !important;
             }
             h1 {
-                font-size: 17px;
+                font-size: 16px !important;
             }
             .back-link {
-                font-size: 11px;
+                position: relative !important;     /* remove absolute positioning */
+                display: inline-block !important;
+                margin-bottom: 10px;    /* space below the link */
+                top: auto !important;
+                left: auto !important;
             }
             figure img {
-                width: 100%;
+                width: 100% !important;
                 margin: 5px auto;
                 display: block;
             }
+            figcaption {
+            font-size: 14px;
         }
     </style>
 </head>
