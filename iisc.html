@@ -59,7 +59,11 @@
                 font-size: 17px !important;
             }
             .back-link {
-                font-size: 11px;
+                position: relative;     /* remove absolute positioning */
+                display: inline-block;
+                margin-bottom: 20px;    /* space below the link */
+                top: auto;
+                left: auto;
             }
             figure img {
                 width: 100% !important;
